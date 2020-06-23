@@ -9,4 +9,117 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+  background-color: #fafbfc;
+}
+
+header {
+  width: 100%;
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 24px 16px 0;
+}
+
+.logo svg {
+  margin-right: 8px;
+}
+
+.nav-item>a {
+  margin: 0px 16px;
+}
+
+.octocat-container {
+  padding: 0 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.octocat-container>div {
+  width: 100%;
+  margin-bottom: 40px;
+  padding: 0 16px;
+}
+
+figure {
+  padding: 8px;
+  margin: 0 0 16px 0;
+  width: 94%;
+  background-color: white;
+  border: 1px #e1e4e8 solid;
+  border-radius: 9px;
+}
+
+figure img {
+  width: 100%;
+}
+
+.item-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-footer span {
+  margin-right: 4px;
+}
+
+.author-icon-list img {
+  width: 24px;
+  height: 24px;
+}
+
+footer {
+  margin: 0 24px;
+  padding: 24px 0px;
+  border-top: 1px #e1e4e8 solid;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+@media all and (min-width: 544px) and (max-width: 1011px) {
+  .octocat-container>div {
+    width: 40%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  #nav-item-to-hide {
+    display: none;
+  }
+}
+
+@media all and (min-width: 1012px) {
+  .octocat-container>div {
+    width: 30%;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .octocat-container>div {
+    width: 22%;
+  }
 }
